@@ -1,0 +1,44 @@
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}
+.navbar-light .navbar-brand{
+    color:#cc9185;
+}
+.top-container {
+    padding-top: 100px;
+    background-color: #beebe9;
+}
+.navbar{
+	
+}
+nav.navbar.navbar-expand-lg.navbar-light{
+    padding: 10px 20px 10px 50px;
+   
+}
+
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 18px;
+    font-family: "Ubuntu";
+
+}
+.navbar-light .navbar-nav .nav-link{
+	color:#fff;
+}
+/*Header*/
+.header{
+}
+.list-group-item{
+	width: 300px
+}
+.card{
+	border: none;
+	margin-top:5%;
+}
