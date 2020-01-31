@@ -3,42 +3,124 @@
     padding-right: 0px;
     margin: 0px;
 }
-.navbar-light .navbar-brand{
-    color:#cc9185;
+
+.navbar-light .navbar-brand {
+    color: #cc9185;
 }
+
 .top-container {
     padding-top: 100px;
     background-color: #beebe9;
 }
-.navbar{
-	
-}
-nav.navbar.navbar-expand-lg.navbar-light{
-    padding: 10px 20px 10px 50px;
-   
+
+.color-html {
+    color: #d67b1e9c;
+
 }
 
+.color-js {
+    color: #fde42eeb;
+}
+
+.color-css {
+    color: #5064f1c4;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 10px 20px 10px 50px;
+
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #4fb37a
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #4fb37a;
+}
 
 .navbar-brand {
     font-family: "Ubuntu";
     font-size: 2.5rem;
     font-weight: bold;
 }
+
 .nav-item {
     padding: 0 18px;
     font-family: "Ubuntu";
 
 }
-.navbar-light .navbar-nav .nav-link{
-	color:#fff;
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
 }
+
 /*Header*/
-.header{
+.header {
+    padding: 100px;
+    background-color: #ededed;
 }
-.list-group-item{
-	width: 300px
+
+.list-group-item {
+    width: 300px
 }
-.card{
-	border: none;
-	margin-top:5%;
+@keyframes moveRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(10px);
+
+    }   
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes moveLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-10px);
+
+    }   
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes moveTop{
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.animation-top{
+    animation-name: moveTop;
+    animation-duration: 3s;
+}
+.animation-left{
+    animation-name: moveRight;
+    animation-duration: 3s;
+}
+.animation-right{
+    animation-name: moveLeft;
+    animation-duration: 3s;
+}
+
+.card {
+    position: relative;
+    border: none;
+    margin-top: 5%;
 }
